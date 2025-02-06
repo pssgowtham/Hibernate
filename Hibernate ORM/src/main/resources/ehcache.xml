@@ -1,0 +1,25 @@
+<ehcache>
+    <diskStore path="java.io.tmpdir"/>
+
+    <!-- Default Cache Configuration -->
+    <defaultCache
+            maxElementsInMemory="1000"
+            eternal="false"
+            timeToIdleSeconds="300"
+            timeToLiveSeconds="600"
+            overflowToDisk="true"
+            diskPersistent="false"
+            diskExpiryThreadIntervalSeconds="120"
+    />
+
+    <!-- Define a Cache for Your Entity -->
+    <cache name="com.cacheing.Col"
+           maxElementsInMemory="100"
+           eternal="false"
+           timeToIdleSeconds="300"
+           timeToLiveSeconds="600"
+           overflowToDisk="true"
+           diskPersistent="false"
+           diskExpiryThreadIntervalSeconds="120"
+    />
+</ehcache>
